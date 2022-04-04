@@ -464,8 +464,13 @@
     <script src="js/site.js"></script>
     <script>
         function myFunction() {
-                document.getElementById("GFG").submit();
+            if (document.getElementById('message').value.length == 0 ) {
+        alert("Please fill out the message field")
             }
+    else {
+        document.getElementById("GFG").submit();
+    }
+}
     </script>
 </body>
 
